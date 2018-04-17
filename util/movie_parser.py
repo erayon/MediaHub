@@ -102,4 +102,4 @@ if __name__ == '__main__':
 	elif platform == "darwin":
 	    print("not implemented yet for this OS")
 	elif platform == "win32":
-	    print("not implemented yet for this OS")
+	    print("not implemented yet for this OS~~~~~")
