@@ -17,5 +17,5 @@ python movie_parser.py
 ```
 cd MediaHub/hub
 python manage.py runserver 8000 
-go to "http://127.0.0.1:8100/myapp/home/"
+go to "http://127.0.0.1:8000/myapp/home/"
 ```
