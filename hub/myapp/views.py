@@ -1,9 +1,13 @@
 from django.shortcuts import render
 import pandas as pd
 import numpy as np
+import os
 # Create your views here.
 def home(request):
-	df = pd.read_pickle("/home/putus/working_directory/personal/movieParser/MediaHub/Database/movies_details.pckl")
+	pp = os.getcwd()
+	loc = "/".join(pp.split("/")[0:-2])+"/MediaHub/Database/movies_details"
+	print(pp)
+	df = pd.read_pickle(loc+".pckl")
 	name   = np.array(df['Movie_name'])
 	MId    = np.array(df['ID'])
 	rating = np.array(df['Rating'])
